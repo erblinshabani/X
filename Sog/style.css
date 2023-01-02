@@ -1,0 +1,210 @@
+article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#search input{
+    width:270px;
+    height: 27px;
+    font-size: 16px;
+    margin: 60px 0;
+}
+
+#search button {
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: green;
+    border: 1px solid green;
+}
+
+.menuList {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    max-width: 1100px;
+  }
+
+.menuItem {
+    width: 270px;
+    margin: 8px;
+    border-radius: 9px;
+    background-color: rgba(244, 224, 115, 0.867);
+    letter-spacing: 0;
+}
+
+.backgroundImages {
+    border-radius: 9px 9px 0 0;
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.description {
+    width: 211px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.itemName {
+    width: 210px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itemName, .menuItem p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 0 2px;
+}
+
+.datePublished {
+    width: 72px;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0;
+}
+
+.number-of-page {
+    border-right: 1px solid black;
+    padding-right: 6px;
+    font-size: 16px;
+}
+
+.type {
+    margin-left: 5px;
+    white-space: nowrap;
+    letter-spacing: 0;
+}
+
+.pagination {
+    margin-top: 30px;
+}
+
+.pagination ul li{
+    display: inline;
+    border: 1px solid rgba(2, 151, 2, 0.81);
+    padding: 8px 14px;
+    margin: 0 3px;
+}
+
+.pagination ul li:hover {
+    background-color: greenyellow;
+    transition: all 0.3s;
+}
+
+.pagination li a {
+    text-decoration: none;
+    color: green;
+    padding: 8px 14px;
+    margin: 0 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .menuList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+
+    .menuItem {
+        width: 240px;
+        margin: 10px;
+        border-radius: 9px;
+        background-color: rgba(255, 231, 92, 0.867);
+    }
+    
+    .description {
+        width: 210px;
+    }
+
+    .itemName, .menuItem p{
+        margin: 10px;
+    }
+
+    .text {
+        margin: 0;
+        display: flex;
+        width: 232px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menuList {
+        grid-template-columns: 1fr;
+        width: 325px;
+    }
+
+    .menuItem {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .description {
+        width: 305px;
+        font-size: 14px;
+    }
+
+    .itemName, .menuItem p{
+        margin: 10px;
+    }
+
+    .text {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .itemName {
+        width: 295px;
+    }
+    
+    .pagination {
+        margin-top: 30px;
+    }
+
+    .pagination ul {
+        padding: 10px;
+    }
+    
+    .pagination ul li{
+        display: inline;
+        border: 1px solid rgba(2, 151, 2, 0.81);
+        padding: 3px 4px;
+        margin: 0 1px;
+    }
+    
+    .pagination ul li:hover {
+        background-color: greenyellow;
+        transition: all 0.3s;
+    }
+    
+    .pagination li a {
+        text-decoration: none;
+        color: green;
+        padding: 8px 14px;
+        margin: 0 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+    }
+    
+}
